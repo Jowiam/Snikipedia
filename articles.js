@@ -9,6 +9,14 @@ window.SNIKI_ARTICLES = [
     featured: true
   },
   {
+    title: "Buksekrisen ved Fuglvatnet",
+    path: "articles/buksekrisen-ved-fuglvatnet.html",
+    category: "Feltliv",
+    excerpt: "Vinterturen der en allerede svekket Gorka-4 gikk fra eneste bukse til improvisert framkomstmiddel.",
+    tags: ["Bang", "Svendsen", "Gorka-4", "vinter", "Fuglvatnet", "felt", "bukse"],
+    updated: "7. september 2026"
+  },
+  {
     title: "Rypefakta",
     path: "articles/rypefakta.html",
     category: "Rype & jakt",
