@@ -72,3 +72,18 @@ Farger, bredder, skrifttyper og mobiloppsett ligger i `site.css`.
 ## Merk
 
 Snikipedia er en parodi/intern humor-side og er ikke tilknyttet Wikipedia eller Wikimedia Foundation.
+
+
+## Utvidet innhold
+
+Denne versjonen inneholder 35 registrerte sider/artikler totalt, inkludert 30 nye
+Snikipedia-artikler med interne krysslenker.
+
+Sentrale innganger:
+- `articles/liste-over-hendelser-som-burde-vaert-unngatt.html`
+- `articles/bang-metoden.html`
+- `articles/snikendes-risikomatrise.html`
+- `articles/snikendes-kommandostruktur.html`
+- `articles/fuglvatnet-ekspedisjonen.html`
+- `articles/tekstilkatastrofer-i-snikendes-historie.html`
+
