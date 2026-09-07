@@ -1,118 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Snikipedia-artikkel om Bang-jakka – en humoristisk feltencyklopedi.">
-  <title>Bang-jakka – Snikipedia</title>
-  <style>
-    :root{--bg:#f8f9fa;--paper:#fff;--text:#202122;--muted:#54595d;--border:#a2a9b1;--soft:#c8ccd1;--link:#3366cc;--accent:#eaecf0;--green:#eef5e9}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}
-    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
-    .site-header{min-height:76px;display:flex;align-items:center;gap:18px;padding:12px 28px;background:var(--paper);border-bottom:1px solid var(--soft)}
-    .wordmark{min-width:230px}.wordmark strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:27px;font-weight:500}.wordmark span{display:block;color:var(--muted);font-size:12px;letter-spacing:.04em}
-    .search{flex:1;max-width:520px;display:flex}.search input{width:100%;padding:9px 12px;border:1px solid var(--border);font-size:14px}.search button{padding:9px 15px;border:1px solid var(--border);border-left:0;background:var(--accent);font-weight:600;cursor:pointer}
-    .page{width:min(1420px,100%);margin:0 auto;padding:24px 28px 80px;background:var(--paper);min-height:calc(100vh - 76px)}
-    .layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:34px}.toc{position:sticky;top:18px;align-self:start;font-size:13px;color:var(--muted);padding-top:18px}.toc-title{color:var(--text);font-weight:700;border-bottom:1px solid var(--soft);padding-bottom:6px;margin-bottom:8px}.toc ol{margin:0;padding-left:22px}.toc li{margin:5px 0}
-    article{min-width:0;max-width:1100px}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(34px,5vw,46px);margin:0;padding-bottom:6px;border-bottom:1px solid var(--border);line-height:1.08}h2{font-size:27px;border-bottom:1px solid var(--border);margin:34px 0 12px;padding-bottom:4px}h3{font-size:18px;margin-top:28px;margin-bottom:8px}p{margin:10px 0 16px}.subtitle{color:var(--muted);font-size:13px;margin-top:4px}
-    .notice{border:1px solid var(--border);border-left:10px solid #36c;background:#f8f9fa;padding:12px 16px;margin:20px 0;font-size:14px}.lead-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:28px;align-items:start}
-    .infobox{border:1px solid var(--border);background:#f8f9fa;font-size:13px;padding:5px}.infobox-title{text-align:center;font-weight:700;background:#dfe8d5;padding:8px;font-size:16px}.infobox img{display:block;width:100%;height:auto;margin:5px auto 0;background:#fff}.caption{color:var(--muted);font-size:11px;line-height:1.4;padding:5px 4px 8px;text-align:center}.infobox table{width:100%;border-collapse:collapse}.infobox th,.infobox td{vertical-align:top;padding:5px 7px;border-top:1px solid #ddd}.infobox th{width:38%;text-align:left}
-    .quote{margin:20px 0;padding:12px 18px;border-left:4px solid var(--border);background:#f8f9fa;font-family:Georgia,"Times New Roman",serif;font-size:18px}.quote small{display:block;margin-top:8px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:12px}
-    .incident-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 22px}.incident-table th,.incident-table td{border:1px solid var(--border);padding:8px 10px;vertical-align:top}.incident-table th{background:var(--accent);text-align:left}.incident-table tr:nth-child(even) td{background:#f8f9fa}.rating{white-space:nowrap;font-weight:600}
-    .field-note{background:var(--green);border:1px solid #a3b68a;padding:12px 16px;margin:18px 0}.classification{width:100%;max-width:680px;border-collapse:collapse;margin:12px 0;font-size:14px}.classification td{border-bottom:1px solid #eaecf0;padding:6px 8px}.classification td:first-child{width:180px;font-weight:700}.references{font-size:13px}.references li{margin-bottom:10px}.footer{margin-top:42px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}.fake-edit{color:var(--muted);font-size:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin-left:8px;white-space:nowrap}.tag{display:inline-block;border:1px solid var(--soft);background:#f8f9fa;padding:1px 6px;border-radius:2px;font-size:12px;color:var(--muted)}.mobile-toc{display:none;border:1px solid var(--border);background:#f8f9fa;padding:10px 14px;margin:18px 0}.mobile-toc summary{cursor:pointer;font-weight:700}
-    @media(max-width:950px){.site-header{padding:12px 16px}.search{display:none}.page{padding:18px 16px 60px}.layout{display:block}.toc{display:none}.mobile-toc{display:block}.lead-grid{display:flex;flex-direction:column}.infobox{width:min(100%,430px);order:-1;margin:0 auto 10px}}
-    @media(max-width:560px){h1{font-size:34px}h2{font-size:24px}.incident-table{font-size:12px}.incident-table th,.incident-table td{padding:6px}}
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Snikipedia – den frie feltencyklopedien.">
+  <title>Snikipedia – den frie feltencyklopedien</title>
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wordmark"><strong>Snikipedia</strong><span>den frie feltencyklopedien</span></div>
-  <form class="search" onsubmit="return fakeSearch(event)"><input id="searchBox" type="search" placeholder="Søk i Snikipedia"><button type="submit">Søk</button></form>
-</header>
-<main class="page"><div class="layout">
-<aside class="toc"><div class="toc-title">Innhold</div><ol>
-  <li><a href="#bakgrunn">Bakgrunn</a></li><li><a href="#konstruksjon">Konstruksjon</a></li><li><a href="#hendelser">Kjente hendelser</a></li><li><a href="#feltobservasjoner">Feltobservasjoner</a></li><li><a href="#vaer">Vind og vær</a></li><li><a href="#forvaltning">Forvaltning</a></li><li><a href="#klassifisering">Klassifisering</a></li><li><a href="#ettermaele">Ettermæle</a></li><li><a href="#referanser">Referanser</a></li>
-</ol></aside>
-<article>
-<h1>Bang-jakka</h1><div class="subtitle">Fra Snikipedia, den frie feltencyklopedien</div>
-<div class="notice"><strong>Denne artikkelen er en parodi.</strong> Produktopplysninger er hentet fra forhandlersiden. «Historiske hendelser», sitater, vurderinger og Snikende-doktrine er intern humor, muntlig tradisjon og grovt overdrevet feltforskning.</div>
-<details class="mobile-toc"><summary>Innhold</summary><ol><li><a href="#bakgrunn">Bakgrunn</a></li><li><a href="#konstruksjon">Konstruksjon</a></li><li><a href="#hendelser">Kjente hendelser</a></li><li><a href="#feltobservasjoner">Feltobservasjoner</a></li><li><a href="#vaer">Vind og vær</a></li><li><a href="#forvaltning">Forvaltning</a></li><li><a href="#klassifisering">Klassifisering</a></li><li><a href="#ettermaele">Ettermæle</a></li><li><a href="#referanser">Referanser</a></li></ol></details>
-<div class="lead-grid">
-<div>
-<p><strong>Bang-jakka</strong> er navnet Snikende bruker om en <em>Särmä Windproof Smock</em> som over tid har gått fra ordinært ytterplagg til et mindre kulturhistorisk fenomen.</p>
-<p>Plagget har vært til stede under nok turer, værskifter og diskusjoner til at det etter hvert har fått sin egen muntlige historikk. Mest kjent er <strong>GPS-hendelsen</strong>, den omstridte regnbeskyttelsen og den stadig tilbakevendende sammenligningen med Forsvarets Gore-Tex.</p>
-<p>Bang-jakka omtales derfor sjelden bare som bekledning. I Snikende fungerer den samtidig som utstyr, samtaleemne, værmålestasjon og dokumentasjon på at et produkt kan være fullt funksjonelt selv om forventningene til det tidvis har vært betydelig mer avanserte enn produktbeskrivelsen.</p>
-<div class="quote">«Jakka fungerer. Det er bare bruksområdet som stadig reforhandles.»<small>— vanlig oppsummering etter værrelaterte diskusjoner</small></div>
+<div class="site-shell">
+  <div id="site-header"></div>
+
+  <main class="page">
+    <section class="home-hero">
+      <div class="hero-main">
+        <div class="eyebrow">Velkommen til</div>
+        <h1>Snikipedia</h1>
+        <p>
+          Den frie feltencyklopedien for ting som fortjener langt mer dokumentasjon
+          enn de objektivt sett har krav på.
+        </p>
+        <p>
+          Her samles rypefakta, feltutstyr, lokale begreper, historiske hendelser
+          og annet materiale fra Snikende – behandlet med varierende grad av
+          kildekritikk og unødvendig seriøs formatering.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="articles/index.html">Se alle artikler</a>
+          <button class="button secondary" id="random-article" type="button">Tilfeldig artikkel</button>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="eyebrow">Utvalgt artikkel</div>
+        <a class="big-link" href="articles/bang-jakka.html">Bang-jakka</a>
+        <p>
+          Fra ordinært ytterplagg til logistikkproblem, værdebatt og kulturminne.
+          Inkluderer GPS-hendelsen, Gore-Tex-sammenligningen og flere år med
+          feltbasert forskning.
+        </p>
+        <a href="articles/bang-jakka.html">Les artikkelen →</a>
+      </aside>
+    </section>
+
+    <h2 class="section-title">Artikler</h2>
+    <section class="grid" data-article-list></section>
+
+    <h2 class="section-title">Portaler</h2>
+    <section class="portal-grid">
+      <a class="portal" href="articles/index.html?q=rype">
+        <strong>🐦 Rype & jakt</strong>
+        <p>Ryper, jakt, natur, statistikk og nødvendig kommentarmateriale.</p>
+      </a>
+      <a class="portal" href="articles/index.html?q=utstyr">
+        <strong>🎒 Utstyr</strong>
+        <p>Plagg, dingser og annet materiell med større historie enn markedsavdelingen planla.</p>
+      </a>
+      <a class="portal" href="articles/index.html?q=felt">
+        <strong>🧭 Feltliv</strong>
+        <p>Begreper, observasjoner, rutiner og systemer som oppstår ute.</p>
+      </a>
+      <a class="portal" href="articles/om-snikipedia.html">
+        <strong>📚 Om prosjektet</strong>
+        <p>Hvordan Snikipedia fungerer og hvordan du legger til nye artikler.</p>
+      </a>
+    </section>
+
+    <h2 class="section-title">Bidra til Snikipedia</h2>
+    <div class="field-note">
+      Nye artikler kan legges til som vanlige HTML-filer. En ferdig
+      <a href="templates/article-template.html">artikkelmal</a> følger med prosjektet,
+      sammen med en README som forklarer nøyaktig hvilke to ting du må endre.
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
 </div>
-<aside class="infobox"><div class="infobox-title">Bang-jakka</div>
-<img src="https://varusteleka.com/cdn/shop/files/3022761cb066600db6.jpg?v=1781251535&width=1000" alt="Särmä Windproof Smock">
-<div class="caption">Representativ Särmä Windproof Smock. Foto: Varusteleka. Bangs eksemplar kan inneholde GPS.</div>
-<table>
-<tr><th>Offisielt navn</th><td>Särmä Windproof Smock</td></tr><tr><th>Lokalt navn</th><td>Bang-jakka</td></tr><tr><th>Type</th><td>Windproof smock / feltplagg / samtaleemne</td></tr><tr><th>Primær bruker</th><td>Bang</td></tr><tr><th>Tilknytning</th><td>Snikende</td></tr><tr><th>Kjent for</th><td>GPS-hendelsen, værdebatten og uvanlig høy lagringskapasitet</td></tr><tr><th>Kjent svakhet</th><td>Forventninger på Gore-Tex-nivå</td></tr><tr><th>Kjent styrke</th><td>Fortsatt i bruk til tross for omfattende feltkritikk</td></tr><tr><th>Status</th><td><span class="tag">Fortsatt operativ</span></td></tr>
-</table></aside></div>
-<section id="bakgrunn"><h2>Bakgrunn <span class="fake-edit">[rediger]</span></h2>
-<p>Särmä Windproof Smock er inspirert av den klassiske britiske windproof-smocken. Forhandleren beskriver modellen som en romslig og ufôret feltjakke med god bevegelighet, ventilasjon og betydelig oppbevaringsplass. Stoffet består av 65 % resirkulert polyester og 35 % økologisk bomull.</p>
-<p>Bang tok jakka i bruk som et praktisk feltplagg. Den nøyaktige datoen er ikke bevart i Snikendes arkiver, men overgangen fra «den nye jakka til Bang» til bare <strong>«Bang-jakka»</strong> regnes som et tegn på at plagget relativt raskt oppnådde institusjonell status.</p>
-<p>Senere historikere har pekt på tre perioder i jakkas utvikling: den tidlige optimistiske fasen, den meteorologiske realitetsfasen og den nåværende perioden hvor alle egenskaper er kjent, men diskuteres videre av tradisjonelle årsaker.</p></section>
-<section id="konstruksjon"><h2>Konstruksjon og egenskaper <span class="fake-edit">[rediger]</span></h2>
-<p>Modellen har en romslig passform, justerbar hette, store knapper, ventilasjonsglidelåser under armene og flere oppbevaringsrom. PU-belegg i stoffet bidrar til økt vindbeskyttelse. Den er konstruert som en windproof-smock, ikke som et komplett vanntett membranskall.</p>
-<p>Den omfattende oppbevaringskapasiteten er praktisk i felt og er samtidig opphavet til jakkas mest kjente enkelthendelse. Snikende skiller derfor mellom <em>teoretisk lagringskapasitet</em> og <em>operativ gjenfinningsevne</em>.</p>
-<div class="field-note"><strong>Teknisk merknad:</strong> At en jakke har plass til GPS, betyr ikke nødvendigvis at GPS-en er tilgjengelig på forespørsel.</div></section>
-<section id="hendelser"><h2>Kjente hendelser <span class="fake-edit">[rediger]</span></h2>
-<p>Bang-jakkas historie er i hovedsak bevart gjennom muntlige kilder. Hendelsene nedenfor har ulik dokumentasjonsgrad, men regnes som sentrale i Snikendes forståelse av plagget.</p>
-<table class="incident-table"><thead><tr><th>#</th><th>Hendelse</th><th>Feltbeskrivelse</th><th>Grad</th></tr></thead><tbody>
-<tr><td>1</td><td><strong>GPS-hendelsen</strong></td><td>Bang meldte GPS-en savnet. Etter en periode med leting viste det seg at navigasjonsutstyret fremdeles befant seg i jakka. Hendelsen etablerte uttrykket «lokalisert, men ikke tilgjengelig».</td><td class="rating">🧭🧭🧭🧭🧭</td></tr>
-<tr><td>2</td><td><strong>Regntesten</strong></td><td>Under faktisk nedbør ble det slått fast at windproof ikke betyr vanntett. Dette var teknisk korrekt, men kom på et tidspunkt hvor teorien allerede var våt.</td><td class="rating">🌧️🌧️🌧️🌧️</td></tr>
-<tr><td>3</td><td><strong>Gore-Tex-sammenligningen</strong></td><td>Jakka ble sammenlignet med Forsvarets Gore-Tex og funnet mindre værbestandig. Svendsens bidrag til den faglige diskusjonen er oppsummert i formuleringen: <strong>«Da sei nokka.»</strong></td><td class="rating">💨💨💨💨💨</td></tr>
-<tr><td>4</td><td><strong>Ventilasjonsoppdagelsen</strong></td><td>Glidelåsene under armene ble på et tidspunkt gjenoppdaget som temperaturregulering. Funksjonen hadde vært montert på jakka hele tiden, men måtte først gjennom en lengre prøveperiode som dekorasjon.</td><td class="rating">🌡️🌡️🌡️</td></tr>
-<tr><td>5</td><td><strong>Tørkefasen</strong></td><td>Etter regnvær går jakka inn i en egen administrativ tilstand kjent som «til tørk». I denne perioden opptar den gjerne mer synlig plass enn da den var i bruk.</td><td class="rating">🪢🪢🪢</td></tr>
-<tr><td>6</td><td><strong>Hetteforhandlingene</strong></td><td>Den justerbare hetta har gitt opphav til flere feltmessige kompromisser mellom værbeskyttelse, hørsel, sidesyn og hvor mye stoff det er akseptabelt å ha rundt hodet før man begynner å irritere seg.</td><td class="rating">🧢🧢🧢</td></tr>
-<tr><td>7</td><td><strong>Feltpatinaen</strong></td><td>Etter lang tids bruk har plagget gradvis gått fra «ny jakke» til «den jakka». Slitasje, folder og generell feltkarakter omtales av eieren som innarbeiding og av andre som dokumentasjon.</td><td class="rating">🏕️🏕️🏕️</td></tr>
-<tr><td>8</td><td><strong>Sesongens første vurdering</strong></td><td>Ved første ordentlige værskifte oppstår tradisjonelt spørsmålet om Bang-jakka er riktig bekledning. Konklusjonen blir som regel at den fungerer fint helt fram til det tidspunktet man skulle ønske man hadde noe annet.</td><td class="rating">🍂🍂🍂🍂</td></tr>
-<tr><td>9</td><td><strong>Erstatningsdebatten</strong></td><td>Forslag om nyere eller mer værbestandig jakke har historisk møtt argumentet «den her fungerer jo». At argumentet ofte fremføres samtidig som jakka diskuteres, har ikke svekket dets popularitet.</td><td class="rating">♻️♻️♻️♻️</td></tr>
-<tr><td>10</td><td><strong>Institusjonaliseringen</strong></td><td>På et ukjent tidspunkt sluttet Bang-jakka å måtte forklares. Nye hendelser kunne nå omtales med «den jakka, ja», og samtlige tilstedeværende forsto referansen.</td><td class="rating">🏛️🏛️🏛️🏛️🏛️</td></tr>
-</tbody></table></section>
-<section id="feltobservasjoner"><h2>Feltobservasjoner <span class="fake-edit">[rediger]</span></h2>
-<p>Utover de navngitte hendelsene er det over tid samlet en rekke mindre observasjoner. Disse er ikke nødvendigvis problemer; flere av dem er snarere egenskaper som har fått uforholdsmessig stor kulturell betydning.</p>
-<ul>
-<li><strong>Temperatur:</strong> Jakka fungerer best når værmeldingen samarbeider med valget av mellomlag. Når dette ikke skjer, blir ventilasjonsglidelåsene plutselig en sentral del av systemet.</li>
-<li><strong>Oppbevaring:</strong> Det er mulig å bære mye utstyr uten sekk. Dette er svært praktisk helt til man tar av jakka og oppdager hvor mye av dagens logistikk som hang på én kleshenger.</li>
-<li><strong>Bevegelse:</strong> Den romslige konstruksjonen gir god plass til lag under. Full last kan samtidig gi plagget en viss egen treghet når brukeren snur seg raskt.</li>
-<li><strong>Identifikasjon:</strong> Bang-jakka trenger ikke navnelapp. Innenfor Snikende er eierskapet etablert utover rimelig tvil.</li>
-<li><strong>Aldring:</strong> Normal slitasje regnes ikke som verdiforringelse, men som løpende arkivering av tidligere sesonger.</li>
-<li><strong>Autoritet:</strong> Sigrid har ved behov fungert som den nærmeste siden kommer en uavhengig kontrollinstans, særlig når produktpåstander og feltopplevelser begynner å gli fra hverandre.</li>
-</ul></section>
-<section id="vaer"><h2>Vind- og værbestandighet <span class="fake-edit">[rediger]</span></h2>
-<p><em>Windproof Smock</em> har vært kilde til en uvanlig langvarig terminologisk debatt. Produktet er laget for vindbeskyttelse og en viss motstand mot regnbyger, men er ikke et fullverdig vanntett membranskall. Mye av jakkas folklore kan spores til perioden før denne forskjellen var sosialt akseptert.</p>
-<table class="incident-table"><thead><tr><th>Forhold</th><th>Teknisk situasjon</th><th>Tradisjonell feltvurdering</th></tr></thead><tbody>
-<tr><td>Tørt og kjølig</td><td>Gode arbeidsforhold</td><td>Jakka mottar ingen kommentarer, som er dens høyeste form for anerkjennelse.</td></tr>
-<tr><td>Vind</td><td>Dette er i stor grad det plagget er laget for</td><td>Perioden hvor produktnavnet oppleves mest presist.</td></tr>
-<tr><td>Kort regnbyge</td><td>En viss beskyttelse</td><td>Optimismen holder seg.</td></tr>
-<tr><td>Vedvarende regn</td><td>Vanntett skall ville vært bedre</td><td>Historiske argumenter blir hentet fram på nytt.</td></tr>
-<tr><td>Sideveis fjellvær</td><td>Spørsmålet har nå blitt større enn jakka</td><td>Gore-Tex nevnes før eller siden.</td></tr>
-</tbody></table></section>
-<section id="forvaltning"><h2>Forvaltning og vedlikehold <span class="fake-edit">[rediger]</span></h2>
-<p>Bang-jakka forvaltes etter prinsippet om kontinuerlig bruk framfor planlagt utfasing. Så lenge glidelåser, knapper og sentrale deler av konstruksjonen fungerer, regnes plagget som tjenestedyktig.</p>
-<p>Det finnes ingen formell utskiftingsplan. Eventuelle svakheter vurderes fortløpende opp mot det tungtveiende argumentet at Bang allerede eier jakka, kjenner den og har fått plass til imponerende mye i den.</p>
-<div class="quote">«Det viktigste er å vite hva utstyret faktisk tåler.»<small>— Sigrid, slik prinsippet vanligvis gjengis i Snikende</small></div>
-<p>Jakka har derfor fått en forvaltningsmodell som minner mer om eldre offentlig infrastruktur enn moderne friluftsbekledning: kjent kapasitet, kjente svakheter og begrenset politisk vilje til full utskifting.</p></section>
-<section id="klassifisering"><h2>Vitenskapelig klassifisering <span class="fake-edit">[rediger]</span></h2>
-<table class="classification"><tr><td>Rike</td><td>Bekledning</td></tr><tr><td>Rekke</td><td>Feltutstyr</td></tr><tr><td>Klasse</td><td>Optimistisk værbeskyttelse</td></tr><tr><td>Orden</td><td>Langtidsoperative plagg</td></tr><tr><td>Familie</td><td>Utstyr som «fortsatt fungerer»</td></tr><tr><td>Slekt</td><td><em>Särmä</em></td></tr><tr><td>Art</td><td><em>Windproof smock bangensis</em></td></tr><tr><td>Bevaringsstatus</td><td>LC – Lite aktuell for utskifting</td></tr></table></section>
-<section id="ettermaele"><h2>Ettermæle og kulturell betydning <span class="fake-edit">[rediger]</span></h2>
-<p>Bang-jakka har oppnådd en posisjon i Snikende som går langt utover funksjonen som ytterbekledning. Den fungerer som tidslinje for tidligere turer, referansepunkt i værdebatter og fast eksempel når teori om utstyr møter praksis.</p>
-<p>Plaggets viktigste kulturelle bidrag er sannsynligvis at det har gjort helt ordinære egenskaper — lommer, hette, ventilasjon og vannmotstand — til tilbakevendende samtalestoff over flere år. Få jakker kan vise til tilsvarende avkastning per innkjøpskrone målt i historier.</p>
-<p>Det finnes ingen kjente planer om pensjonering. En eventuell etterfølger vil uansett møte et betydelig problem: Den må ikke bare være en bedre jakke, men også konkurrere med flere sesonger med opparbeidet mytologi.</p></section>
-<section id="referanser"><h2>Referanser <span class="fake-edit">[rediger]</span></h2><ol class="references">
-<li>Varusteleka: <a href="https://varusteleka.com/en-no/products/sarma-windproof-smock" target="_blank" rel="noopener noreferrer">Särmä Windproof Smock</a>. Produktbeskrivelse og tekniske egenskaper.</li>
-<li>Snikendes muntlige tradisjon: GPS-hendelsen, regntesten, Gore-Tex-sammenligningen og senere feltobservasjoner. Kildekritisk status: <em>«historien blir bedre for hver gjenfortelling»</em>.</li>
-<li>Feltvurderinger: samlet gjennom gjentatt bruk av plagget under varierende norske forhold. Vitenskapelig kontrollgruppe foreligger ikke.</li>
-</ol></section>
-<section><h2>Se også <span class="fake-edit">[rediger]</span></h2><ul><li>GPS – navigasjonsutstyr og tidligere beboer i ukjent lomme</li><li>Gore-Tex – referanseenhet for værrelaterte diskusjoner</li><li>Windproof – ord med historisk høy tolkningselastisitet</li><li>Feltpatina – slitasje med høy affeksjonsverdi</li><li>Snikende – institusjonen som har bevart kildematerialet</li></ul></section>
-<div class="footer"><p>Snikipedia er ikke tilknyttet Wikipedia eller Wikimedia Foundation. Siden er laget som intern humor for Snikende. Produktnavn og produktfoto tilhører sine respektive rettighetshavere.</p><p>Sist oppdatert: <span id="lastUpdated"></span> · Feltstatus: Bang-jakka antas fortsatt å eksistere.</p></div>
-</article></div></main>
-<script>
-function fakeSearch(event){event.preventDefault();const v=document.getElementById('searchBox').value.trim().toLowerCase();if(!v)return false;if(v.includes('gps')||v.includes('jakke')||v.includes('bang')||v.includes('lomme'))document.getElementById('hendelser').scrollIntoView({behavior:'smooth'});else if(v.includes('sigrid')||v.includes('vedlikehold'))document.getElementById('forvaltning').scrollIntoView({behavior:'smooth'});else if(v.includes('regn')||v.includes('vind')||v.includes('gore'))document.getElementById('vaer').scrollIntoView({behavior:'smooth'});else alert('Snikipedia fant ingen egen artikkel om dette. Kildematerialet kan være utilstrekkelig, eller ligge i en jakke.');return false}
-document.getElementById('lastUpdated').textContent=new Intl.DateTimeFormat('nb-NO',{year:'numeric',month:'long',day:'numeric'}).format(new Date());
-</script>
-</body></html>
+<script src="articles.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Om Snikipedia – Snikipedia</title>
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="page">
+<article class="article">
+  <div class="backline"><a href="../index.html">← Forsiden</a></div>
+  <h1>Om Snikipedia</h1>
+  <div class="article-subtitle">Fra Snikipedia, den frie feltencyklopedien</div>
+
+  <p>
+    <strong>Snikipedia</strong> er en privat humoristisk feltencyklopedi for
+    Snikende. Prosjektet kombinerer faktiske kilder, lokale historier og bevisst
+    overdreven Wikipedia-form.
+  </p>
+
+  <h2>Prinsipper</h2>
+  <ul>
+    <li>Faktiske produkt- og naturpåstander bør helst ha en ekte kilde.</li>
+    <li>Interne historier kan behandles som «muntlig tradisjon».</li>
+    <li>En vits blir sjelden bedre av å nevne alle personer som finnes.</li>
+    <li>Artikler bør være lette å lese selv for noen som ikke kjenner hele historien.</li>
+    <li>Snikipedia er ikke Wikipedia og forsøker ikke å utgi seg for å være det.</li>
+  </ul>
+
+  <h2>Hvordan legge til en artikkel</h2>
+  <p>Prosjektet er bygget for GitHub Pages og består bare av HTML, CSS og JavaScript.</p>
+  <ol>
+    <li>Kopier <span class="codeish">templates/article-template.html</span>.</li>
+    <li>Legg kopien i <span class="codeish">articles/</span> og gi den et filnavn, for eksempel <span class="codeish">ny-artikkel.html</span>.</li>
+    <li>Endre tittel og innhold i HTML-filen.</li>
+    <li>Legg én ny oppføring i <span class="codeish">articles.js</span>. Da dukker artikkelen automatisk opp på forsiden, i artikkeloversikten og i søket.</li>
+    <li>Commit og push til <span class="codeish">main</span>. GitHub Pages publiserer oppdateringen.</li>
+  </ol>
+
+  <div class="field-note">
+    <strong>Tips:</strong> Du trenger vanligvis ikke endre <span class="codeish">site.css</span>
+    eller <span class="codeish">site.js</span> når du legger til en ny artikkel.
+  </div>
+
+  <h2>Filstruktur</h2>
+  <pre class="template-note">Snikipedia/
+├── index.html
+├── site.css
+├── site.js
+├── articles.js
+├── 404.html
+├── articles/
+│   ├── index.html
+│   ├── bang-jakka.html
+│   ├── rypefakta.html
+│   ├── feltordbok.html
+│   └── om-snikipedia.html
+└── templates/
+    └── article-template.html</pre>
+</article>
+</main>
+<div id="site-footer"></div>
+<script src="../articles.js"></script><script src="../site.js"></script>
+</body></html>
