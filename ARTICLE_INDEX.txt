@@ -3,13 +3,14 @@ Snikipedia article index
 Begreper: 5
 Feltvitenskap: 11
 Historiske hendelser: 7
-Personer og institusjoner: 4
+Personer og institusjoner: 5
 Rype & jakt: 4
 Snikipedia: 1
 Utstyr: 3
 
 - Bang-jakka -> articles/bang-jakka.html
 - Buksekrisen ved Fuglvatnet -> articles/buksekrisen-ved-fuglvatnet.html
+- Brage Dåbakk -> articles/brage-dabakk.html
 - Rypefakta -> articles/rypefakta.html
 - Snikendes feltordbok -> articles/feltordbok.html
 - Om Snikipedia -> articles/om-snikipedia.html

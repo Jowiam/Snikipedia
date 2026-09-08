@@ -87,3 +87,15 @@ Sentrale innganger:
 - `articles/fuglvatnet-ekspedisjonen.html`
 - `articles/tekstilkatastrofer-i-snikendes-historie.html`
 
+
+
+## Brage-biografi
+
+Ny personartikkel:
+`articles/brage-dabakk.html`
+
+Tilhørende bilde:
+`assets/brage-arkivbilde.jpg`
+
+Artikkelen er registrert i `articles.js` og vises derfor automatisk på
+forsiden, i artikkeloversikten og i søket.

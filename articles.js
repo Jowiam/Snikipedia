@@ -31,6 +31,22 @@ window.SNIKI_ARTICLES = [
     "featured": true
   },
   {
+    "title": "Brage Dåbakk",
+    "path": "articles/brage-dabakk.html",
+    "category": "Personer og institusjoner",
+    "excerpt": "Snikendes mobile beredskapslager, ufrivillige mekaniker, karatebakgrunn og kontinuerlige kvalitetskontroll.",
+    "tags": [
+      "Brage",
+      "karate",
+      "mekaniker",
+      "beredskap",
+      "Snikende",
+      "rype"
+    ],
+    "updated": "8. september 2026",
+    "featured": true
+  },
+  {
     "title": "Rypefakta",
     "path": "articles/rypefakta.html",
     "category": "Rype & jakt",

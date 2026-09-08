@@ -149,3 +149,42 @@ img{max-width:100%}
   .grid,.portal-grid{grid-template-columns:1fr}.article h1{font-size:35px}
   .footer-inner{padding:18px 15px;display:block}.wikitable{font-size:12px}.wikitable th,.wikitable td{padding:6px}
 }
+
+/* Snikipedia biography additions */
+.article-hero {
+  margin: 18px 0 24px;
+  border: 1px solid var(--border);
+  background: #f8f9fa;
+}
+.article-hero img {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+}
+.article-hero figcaption {
+  padding: 7px 10px;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+.bio-aliases {
+  margin: 8px 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.bio-aliases em {
+  white-space: normal;
+}
+.role-list li {
+  margin: 5px 0;
+}
+.source-status {
+  display: inline-block;
+  padding: 1px 6px;
+  border: 1px solid var(--soft);
+  background: #f8f9fa;
+  border-radius: 2px;
+  font-size: 11px;
+  color: var(--muted);
+}
