@@ -1,5 +1,13 @@
 window.SNIKI_ARTICLES = [
   {
+    "title": "Trusselsaken ved Bodø videregående (2017)",
+    "path": "articles/trusselsaken-bodo-videregaende-2017.html",
+    "category": "Dokumenterte hendelser",
+    "excerpt": "Kildebelagt oppsummering av skoletrusselen i november 2017, evakueringen og omtalen av planlagt mekling i januar 2018.",
+    "tags": ["Bodø", "Bodø videregående", "skole", "trusler", "evakuering", "konfliktrådet", "NRK", "2017", "2018"],
+    "updated": "18. november 2026"
+  },
+  {
     "title": "Bang-sekken",
     "path": "bang-sekken.html",
     "category": "Utstyr",

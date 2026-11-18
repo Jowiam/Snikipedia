@@ -1,6 +1,7 @@
 Snikipedia article index
 
 Begreper: 5
+Dokumenterte hendelser: 1
 Feltvitenskap: 11
 Historiske hendelser: 7
 Personer og institusjoner: 5
@@ -8,6 +9,7 @@ Rype & jakt: 4
 Snikipedia: 1
 Utstyr: 5
 
+- Trusselsaken ved Bodø videregående (2017) -> articles/trusselsaken-bodo-videregaende-2017.html
 - Bang-sekken -> bang-sekken.html
 - Chiappa Little Badger .22 LR -> chiappa-little-badger.html
 - Bang-jakka -> articles/bang-jakka.html
