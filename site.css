@@ -188,3 +188,10 @@ img{max-width:100%}
   font-size: 11px;
   color: var(--muted);
 }
+
+/* Article attachments and editorial notes */
+.video-figure{margin:16px 0}
+.video-figure video{display:block;width:100%;max-height:620px;background:#202122;border:1px solid var(--soft)}
+.video-figure figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.wikitable caption{text-align:left;color:var(--muted);padding-bottom:8px}
+.article-note{margin-top:32px;padding-top:16px;border-top:1px solid var(--soft);font-size:12px;color:var(--muted)}

@@ -104,8 +104,8 @@ Nedlasting sender ikke teksten til redaktøren. Utkastet beholdes når dialogen
 lukkes, men lagres ikke ved lasting av siden på nytt.
 
 Funksjonen ligger i `assets/suggestions.js` og `assets/suggestions.css`.
-`site.js` laster den for felles sidemal, og de to eldre rotsidene inkluderer
-skriptet direkte. Ved flytting til et annet repository, endre køadressen i
+`site.js` laster den for felles sidemal, også på Bang-sekken og Chiappa-siden.
+Ved flytting til et annet repository, endre køadressen i
 `assets/suggestions.js`.
 
 ## Merk
