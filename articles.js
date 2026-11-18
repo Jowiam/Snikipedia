@@ -287,14 +287,18 @@ window.SNIKI_ARTICLES = [
     "title": "Svendsens vernepliktige",
     "path": "articles/svendsens-vernepliktige.html",
     "category": "Personer og institusjoner",
-    "excerpt": "En kollektiv referanseenhet for spørsmål, friksjon, instruksjon og overraskende lav terskel for sammenligninger.",
+    "excerpt": "Grunnen til at Svendsen aldri får en rolig arbeidsdag: bilskader, knekte våpendeler, halvferdige oppgaver og et uuttømmelig behov for etterarbeid.",
     "tags": [
       "Svendsen",
       "vernepliktige",
-      "institusjon",
-      "felt"
+      "arbeidsmoral",
+      "bilskader",
+      "våpendeler",
+      "forsvarsmateriell",
+      "etterarbeid",
+      "satire"
     ],
-    "updated": "7. september 2026"
+    "updated": "18. november 2026"
   },
   {
     "title": "Hjelmspørsmålet",
