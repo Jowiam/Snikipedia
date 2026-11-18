@@ -1,5 +1,23 @@
 window.SNIKI_ARTICLES = [
   {
+    "title": "Bang-sekken",
+    "path": "bang-sekken.html",
+    "category": "Utstyr",
+    "excerpt": "Fire vanndunker, et veldig vått lagstelt, to stridsekker og opptil 120 kilo vinterøvelse og feltmytologi.",
+    "tags": ["Bang", "sekk", "120 kg", "vanndunker", "lagstelt", "vinterøvelse", "førstegangstjeneste"],
+    "updated": "18. november 2026",
+    "featured": true
+  },
+  {
+    "title": "Chiappa Little Badger .22 LR",
+    "path": "chiappa-little-badger.html",
+    "category": "Utstyr",
+    "excerpt": "Fakta, tekniske data og produsentkilder om den sammenleggbare enkeltskuddsriflen, med video og nedlastbar fil.",
+    "tags": ["Chiappa", "Little Badger", ".22 LR", "22lr", "rifle", "utstyr", "video"],
+    "updated": "18. november 2026",
+    "featured": true
+  },
+  {
     "title": "Bang-jakka",
     "path": "articles/bang-jakka.html",
     "category": "Utstyr",
