@@ -5,6 +5,10 @@
   function url(path=""){ return new URL(path, ROOT).href; }
   window.snikiUrl = url;
 
+  const suggestions = document.createElement('script');
+  suggestions.src = url('assets/suggestions.js');
+  document.head.append(suggestions);
+
   const headerHost = document.getElementById("site-header");
   if(headerHost){
     headerHost.innerHTML = `

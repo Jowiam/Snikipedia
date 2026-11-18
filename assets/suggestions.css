@@ -1,0 +1,20 @@
+.suggestion-button,.suggestion-actions button{font:inherit;font-size:14px;border:1px solid #72777d;background:#f8f9fa;color:#202122;padding:9px 14px;cursor:pointer;border-radius:3px}
+.suggestion-button{background:#36c;color:white;border-color:#36c}
+.suggestion-page-edit{margin:12px 0}
+.suggestion-edit{font:13px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#36c;border:0;background:transparent;padding:5px 8px;cursor:pointer;vertical-align:middle}
+.suggestion-edit:hover{text-decoration:underline}
+.suggestion-panel{margin-top:32px;padding:18px;border:1px solid #a2a9b1;background:#f8f9fa}
+.suggestion-panel h2{margin-top:0}
+.suggestion-queue{display:inline-block;margin:10px;font-size:14px}
+.suggestion-dialog{box-sizing:border-box;width:min(760px,calc(100% - 24px));max-height:90vh;overflow:auto;padding:24px;border:1px solid #72777d;border-radius:5px;color:#202122;background:white;font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.suggestion-dialog::backdrop{background:rgb(0 0 0 / 50%)}
+.suggestion-dialog h2{font:normal 27px Georgia,serif;margin:0 0 12px}
+.suggestion-dialog label{display:block;margin:15px 0 5px;font-weight:600}
+.suggestion-dialog input,.suggestion-dialog textarea{box-sizing:border-box;width:100%;padding:10px;border:1px solid #72777d;border-radius:2px;font:inherit;background:white;color:#202122}
+.suggestion-dialog textarea{resize:vertical}
+.suggestion-original{margin-top:12px}.suggestion-original summary{cursor:pointer}
+.suggestion-original pre{max-height:220px;overflow:auto;white-space:pre-wrap;background:#f8f9fa;padding:12px;font:13px/1.6 inherit}
+.suggestion-actions{display:flex;gap:10px;flex-wrap:wrap}
+.suggestion-help,.suggestion-context{font-size:13px;color:#54595d}
+.suggestion-status{font-size:14px;font-weight:600}
+.suggestion-dialog :focus-visible,.suggestion-button:focus-visible,.suggestion-edit:focus-visible{outline:3px solid #36c;outline-offset:3px}
